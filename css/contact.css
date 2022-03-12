@@ -1,0 +1,25 @@
+main,
+footer,
+.delete-messages-wrapper,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 5px;
+    margin-bottom: 30px;
+}
+
+footer {
+    font-style: italic;
+}
+
+#deleteMessages {
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    margin: 30px 0;
+}

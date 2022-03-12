@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <title>Happi's Cafe</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Contact Us - Happi's Cafe</h1>
+            <p>Best coffee in London</p>
+        </header>
+
+        <main>
+            <form class="contact-form" onsubmit="onFormSubmit(event)">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    minlength="3"
+                />
+
+                <label for="fullName">Full Name</label>
+                <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    required
+                    minlength="3"
+                />
+
+                <label for="message">Message</label>
+                <textarea
+                    rows="3"
+                    cols="20"
+                    name="message"
+                    id="message"
+                    required
+                    minlength="15"
+                >
+Please leave a message here.</textarea
+                >
+
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <hr />
+        <h2>Messages</h2>
+        <div class="delete-messages-wrapper">
+            <button
+                type="button"
+                id="deleteMessages"
+                onclick="deleteMessages(event)"
+            >
+                Delete
+            </button>
+        </div>
+        <footer>
+            <dl id="messagesOutput"></dl>
+        </footer>
+    </body>
+    <script src="js/contact.js"></script>
+</html>
